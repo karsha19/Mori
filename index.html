@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mori</title>
+<style>
+
+html,
+body {
+  padding: 0;
+  background: black;
+  max-width: 900px;
+  margin: 0 auto;
+  color: silver;
+  font: 16px/1.5 Arial;
+}
+
+img {
+  width: 900px;
+  height: 600px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  column-gap: 16px;
+  border-top: 1px solid black;
+}
+
+a {
+  color: dodgerBlue;
+}
+
+nav a {
+  padding: 8px;
+  font: bold 0.75rem Verdana;
+  text-decoration: none;
+  outline: 0;
+  transition: 280ms ease-out 120ms;
+}
+
+nav > a {
+  border-top: 1px solid transparent;
+  margin-top: -1px;
+}
+
+nav > a:hover,
+nav > a:focus,
+#current {
+  border-top-color: dodgerBlue;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <img src="https://mori79.github.io/Mori.jpg" alt="Logo">
+</header>
+
+<nav>
+  <a href="index.html" id="current">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <h1>About</h1>
+  <p>My name’s Mori and I was born in 1979 in Isfahan, Iran. I’m an EFL (English as a Foreign Language) teacher at Iran Language Institute. In my free time, I love web development, sports and music.</p>
+</main>
+
+</body>
+</html>
