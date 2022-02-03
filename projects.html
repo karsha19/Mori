@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="https://mori.pages.dev/">
+  <title>Mori</title>
+<style>
+
+html,
+body {
+  padding: 0;
+  background: black;
+  max-width: 900px;
+  margin: 0 auto;
+  color: silver;
+  font: 16px/1.5 Arial;
+}
+
+img {
+  width: 100%;
+}
+
+nav,
+main {
+  padding: 0 1em;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  column-gap: 16px;
+  border-top: 1px solid black;
+}
+
+nav a {
+  padding: 8px;
+  font: bold 0.75rem Verdana;
+  color: dodgerBlue;
+  text-decoration: none;
+  outline: 0;
+  transition: 280ms ease-out 120ms;
+}
+
+nav > a {
+  border-top: 1px solid transparent;
+  margin-top: -1px;
+}
+
+nav > a:hover,
+nav > a:focus,
+#current {
+  border-top-color: dodgerBlue;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+ul li {
+  margin: 1em 0;
+}
+
+ul a {
+  color: silver;
+  text-underline-position: under;
+}
+
+ul a:hover {
+  text-decoration: none;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <img src="logo.jpg" alt="Logo">
+</header>
+
+<nav>
+  <a href="index.html">About</a>
+  <a href="projects.html" id="current">Projects</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <h1>Projects</h1>
+  <ul>
+    <li><a href="https://sites.google.com/view/howtos">How-tos</a></li>
+    <li><a href="http://gaesamplesite.appspot.com/">GAE Sample Site</a></li>
+    <li><a href="https://classactivitycalculator.github.io/">Class Activity Calculator</a></li>
+    <li><a href="http://htmleditor.gitlab.io/">HTML Editor: online HTML editor with real-time preview</a></li>
+  </ul>
+</main>
+
+</body>
+</html>
