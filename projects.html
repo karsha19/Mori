@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.png">
+<base href="https://mori.pages.dev/projects">
   <title>Mori</title>
 <style>
 
@@ -19,38 +21,11 @@ body {
 
 img {
   width: 100%;
+  vertical-align: bottom;
 }
 
-nav,
 main {
   padding: 0 1em;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  column-gap: 16px;
-  border-top: 1px solid black;
-}
-
-nav a {
-  padding: 8px;
-  font: bold 0.75rem Verdana;
-  color: dodgerBlue;
-  text-decoration: none;
-  outline: 0;
-  transition: 280ms ease-out 120ms;
-}
-
-nav > a {
-  border-top: 1px solid transparent;
-  margin-top: -1px;
-}
-
-nav > a:hover,
-nav > a:focus,
-#current {
-  border-top-color: dodgerBlue;
 }
 
 h1 {
@@ -62,7 +37,7 @@ ul li {
 }
 
 ul a {
-  color: silver;
+  color: dodgerBlue;
   text-underline-position: under;
 }
 
@@ -70,6 +45,7 @@ ul a:hover {
   text-decoration: none;
 }
 
+  
 </style>
 </head>
 <body>
@@ -78,13 +54,9 @@ ul a:hover {
   <img src="logo.jpg" alt="Logo">
 </header>
 
-<nav>
-  <a href="index.html">About</a>
-  <a href="projects.html" id="current">Projects</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
 <main>
+  <h1>About</h1>
+  <p>My name’s Mori and I was born in 1979 in Isfahan, Iran. I’m an EFL (English as a Foreign Language) teacher at Iran Language Institute. In my free time, I love web development, sports and music.</p>
   <h1>Projects</h1>
   <ul>
     <li><a href="https://sites.google.com/view/howtos">How-tos</a></li>
@@ -92,6 +64,8 @@ ul a:hover {
     <li><a href="https://classactivitycalculator.github.io/">Class Activity Calculator</a></li>
     <li><a href="http://htmleditor.gitlab.io/">HTML Editor: online HTML editor with real-time preview</a></li>
   </ul>
+  <h1>Contact</h1>
+  <p>Feel free to contact me through the following.</p>
 </main>
 
 </body>
