@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demos: CSS Radio Buttons - Mori</title>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <style>
+    body {
+      display: inline-grid;
+      font: 16px "Times New Roman";
+    }
+
+    a {
+      padding-left: 24px;
+      margin: 0 2em 1em 0;
+      justify-self: start;
+      background: radial-gradient(circle 7px at 8px, #dedede 7px, transparent 8px);
+      color: #333;
+      text-decoration: none;
+    }
+
+    a:hover {
+      background: radial-gradient(circle 7px at 8px, #ccc 7px, transparent 8px);
+    }
+
+    a:target {
+      background: radial-gradient(circle 7px at 8px, dodgerBlue 4px, white 5px 6px, dodgerBlue 7px, transparent 8px);
+    }
+
+    div {
+      grid-area: 1 / 2 / 7;
+      width: 154px;
+      height: 154px;
+      text-align: center;
+      background: aqua;
+      color: black;
+      border-radius: 50%;
+      transition: 0.3s linear;
+    }
+
+    #rotate90:target~div {
+      transform: rotate(90deg);
+    }
+
+    #rotate180:target~div {
+      transform: rotate(180deg);
+    }
+
+    #rotate270:target~div {
+      transform: rotate(270deg);
+    }
+
+    #rotate360:target~div {
+      transform: rotate(360deg);
+    }
+  </style>
+</head>
+
+<body>
+
+  <a href="#rotate0" id="rotate0">0°</a>
+  <a href="#rotate90" id="rotate90">90°</a>
+  <a href="#rotate180" id="rotate180">180°</a>
+  <a href="#rotate270" id="rotate270">270°</a>
+  <a href="#rotate360" id="rotate360">360°</a>
+
+  <div>•</div>
+
+</body>
+
+</html>
