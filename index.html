@@ -10,14 +10,16 @@
   <base href="https://mori.pages.dev/">
   <link rel="icon" type="image/png" href="favicon.png">
   <style>
-    html,
+    html {
+      margin: 0 2em 2em;
+    }
+
     body {
       font: 16px/1.5 Arial;
       color: silver;
       background: black;
       max-width: 900px;
-      margin: 0 auto 1em;
-      padding: 0;
+      margin: 0 auto;
     }
 
     header img {
@@ -26,15 +28,35 @@
       vertical-align: bottom;
     }
 
+    nav {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 1em;
+      background: #333;
+      border-radius: 20px;
+    }
+
+    nav a {
+      font: bold 12px Verdana;
+      padding: 1em;
+      color: inherit;
+      text-decoration: none;
+      outline: 0;
+      transition: 0.3s ease-in-out;
+    }
+
+    nav>a:hover,
+    nav>a:focus,
+    #current {
+      color: dodgerBlue;
+    }
+
     main {
       padding: 0 1em;
     }
 
     h1 {
       font-size: 1.5em;
-    }
-
-    h1:not(:first-child) {
       margin-top: 1.5em;
     }
 
@@ -72,6 +94,11 @@
   <header>
     <img src="images/hero-image.jpg" alt="Hero image">
   </header>
+
+  <nav>
+    <a href="/" id="current">Home</a>
+    <a href="demos">Demos</a>
+  </nav>
 
   <main>
     <h1>About</h1>
