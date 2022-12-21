@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demos: URL Downloader - Mori</title>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <style>
+    * {
+      color: #333;
+    }
+
+    label {
+      font: 13px Arial;
+    }
+
+    input {
+      padding: 6px 10px;
+      border-radius: 5px;
+      margin: 0 5px;
+    }
+
+    a {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 5px;
+      background: linear-gradient(#eee, #ddd);
+      font: bold 12px Verdana;
+      text-shadow: 0 1px white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <label for="url">URL</label><input type="url" id="url">
+  <a href="">Right-click > Save link as…</a>
+  <script>
+    document.querySelector('input').addEventListener('input', function() {
+      document.querySelector('a').href = this.value;
+    });
+  </script>
+</body>
+
+</html>
