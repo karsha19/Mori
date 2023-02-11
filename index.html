@@ -9,8 +9,28 @@
   <!-- Cloudflare redirects 403 and 404 pages to home page, so we need a base URL. -->
   <base href="https://mori.pages.dev/">
   <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="stylesheet" href="global.css">
   <style>
+    body {
+      font-family: Arial;
+      line-height: 1.5;
+      color: silver;
+      background: black;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 2em 2em;
+    }
+
+    header img {
+      width: 100%;
+      aspect-ratio: 3 / 2;
+      vertical-align: bottom;
+    }
+
+    h1 {
+      font-size: 1.5em;
+      margin-top: 1.5em;
+    }
+
     address a:not(:last-child) {
       margin-right: 0.5em;
     }
@@ -24,6 +44,19 @@
     address img:hover {
       filter: brightness(2);
     }
+
+    li {
+      margin-top: 1em;
+    }
+
+    li a {
+      color: dodgerBlue;
+      text-underline-position: under;
+    }
+
+    li a:hover {
+      text-decoration: none;
+    }
   </style>
 </head>
 
@@ -33,21 +66,9 @@
     <img src="images/hero-image.jpg" alt="Hero image">
   </header>
 
-  <nav>
-    <a href="/" id="current">Home</a>
-    <a href="demos">Demos</a>
-  </nav>
-
   <main>
     <h1>About</h1>
     <p>My name is Mori and I was born in Isfahan, Iran. I am an English teacher at Iran Language Institute. In my free time, I love web development, sports and music.</p>
-    <h1>Projects</h1>
-    <ul>
-      <li><a href="https://sites.google.com/view/howtos">How-tos</a>: An online home for step-by-step, how-to guides and DIY tutorials</li>
-      <li><a href="http://htmleditor.gitlab.io">HTML Editor</a>: Edit your HTML, CSS, and JavaScript code and monitor the instant live preview.</li>
-      <li><a href="https://t.me/EnglishBroadcast">English Broadcast</a>: Educational and entertaining materials for English learners</li>
-      <li><a href="https://classactivitycalculator.github.io">Class Activity Calculator</a>: Calculate the class activity grades of the ILI students.</li>
-    </ul>
     <h1>Contact</h1>
     <p>Please feel free to contact me through the following channels.</p>
     <address>
@@ -56,8 +77,14 @@
       <a href="https://t.me/MortezaMirmojarabian" title="Telegram"><img src="images/media/telegram.svg" alt="Telegram"></a>
       <a href="https://wa.me/989132054173" title="WhatsApp"><img src="images/media/whatsapp.svg" alt="WhatsApp"></a>
       <a href="https://www.instagram.com/mortezamirmojarabian" title="Instagram"><img src="images/media/instagram.svg" alt="Instagram"></a>
-      <a href="https://twitter.com/Mirmojarabian" title="Twitter"><img src="images/media/twitter.svg" alt="Twitter"></a>
     </address>
+    <h1>Projects</h1>
+    <ul>
+      <li><a href="http://htmleditor.gitlab.io">HTML Editor</a>: Edit your HTML, CSS, and JavaScript code and monitor the instant live preview.</li>
+      <li><a href="https://classactivitycalculator.github.io">Class Activity Calculator</a>: Calculate the class activity grades of the ILI students.</li>
+    </ul>
+    <h1>Articles</h1>
+    <h1>Follow</h1>
   </main>
 
 </body>
