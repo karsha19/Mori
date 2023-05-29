@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="An embed code generator and step-by-step instructions to embedding your Google Drive folder in a website">
   <title>How to Embed a Google Drive Folder in a Web Page</title>
-  <base href="https://mori.pages.dev/">
   <link rel="icon" type="image/png" href="images/m.png">
   <style>
     body {
@@ -357,16 +356,8 @@
         this.textContent = 'Copy';
       }, 1500);
     });
-
-    document.querySelector('main footer button').addEventListener('click', function() {
-      navigator.clipboard.writeText(location);
-      function toggleNotification() {
-        document.getElementById('notification').toggleAttribute('hidden');
-      }
-      toggleNotification();
-      setTimeout(toggleNotification, 1500);
-    });
   </script>
+  <script src="posts.js"></script>
 </body>
 
 </html>
