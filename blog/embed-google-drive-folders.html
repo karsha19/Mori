@@ -7,108 +7,8 @@
   <meta name="description" content="An embed code generator and step-by-step instructions to embedding your Google Drive folder in a website">
   <title>How to Embed a Google Drive Folder in a Web Page</title>
   <link rel="icon" type="image/png" href="/images/m.png">
+  <link rel="stylesheet" href="posts.css">
   <style>
-    body {
-      font-family: Arial;
-      margin: 0;
-    }
-
-    body > * {
-      padding: 1em;
-    }
-
-    body > header,
-    body > footer {
-      background: black;
-    }
-
-    nav,
-    main,
-    body > footer div {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    nav,
-    main footer,
-    body > footer div,
-    address {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 0.5rem;
-      color: silver;
-    }
-
-    nav,
-    span,
-    address {
-      font-style: normal;
-      font-size: smaller;
-    }
-
-    nav a,
-    body > footer a {
-      font: bold 0.875rem Verdana;
-      color: inherit;
-      text-decoration: none;
-    }
-
-    nav a:hover,
-    body > footer a:hover {
-      filter: brightness(2);
-    }
-
-    nav a:first-child {
-      margin-right: 1rem;
-    }
-
-    [href="/blog"] {
-      margin-right: auto;
-    }
-
-    img,
-    svg {
-      display: block;
-    }
-
-    main,
-    span {
-      color: #333;
-    }
-
-    main header {
-      text-align: center;
-    }
-
-    p {
-      line-height: 1.5;
-    }
-
-    main a {
-      color: dodgerBlue;
-      text-underline-position: under;
-    }
-
-    main a:hover {
-      text-decoration: none;
-    }
-
-    li,
-    main footer {
-      margin-top: 1em;
-    }
-
-    code {
-      overflow-wrap: break-word;
-    }
-
-    img[alt="Published folder"] {
-      max-width: 100%;
-      height: auto;
-      margin: 0 auto;
-    }
-
     form {
       display: grid;
       grid-template-columns: auto minmax(0, 1fr);
@@ -156,19 +56,6 @@
       height: 8.5em;
       overflow-wrap: break-word;
       overflow: auto;
-    }
-
-    main footer button {
-      background: transparent;
-      padding: 0;
-      border: 0;
-      margin: 0;
-      cursor: pointer;
-    }
-
-    body > footer [href="/blog"]::before {
-      content: "<";
-      margin-right: 0.5rem;
     }
   </style>
 </head>
