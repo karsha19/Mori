@@ -49,7 +49,8 @@ body > footer a:hover {
   filter: brightness(2);
 }
 
-nav a:first-child {
+nav a:first-child,
+svg#comment {
   margin-right: 1rem;
 }
 
