@@ -50,7 +50,7 @@ body > footer a:hover {
 }
 
 nav a:first-child,
-svg#comment {
+a#comment {
   margin-right: 1rem;
 }
 
