@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Mori's Blog</title>
+<link>https://mori.pages.dev/blog</link>
+<description>Posts mostly about web development: HTML, CSS, and JavaScript tips and tricks</description>
+<atom:link href="https://mori.pages.dev/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>How to Embed a Google Drive Folder in a Web Page</title>
+<link>https://mori.pages.dev/blog/embed-google-drive-folders</link>
+<guid>https://mori.pages.dev/blog/embed-google-drive-folders</guid>
+<pubDate>Thu, 01 Jun 2023 00:00:00 GMT</pubDate>
+<description>Description for your content.</description>
+</item>
+</channel>
+</rss>
