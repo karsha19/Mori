@@ -4,7 +4,7 @@
     <title>Mori's Blog</title>
     <link>https://mori.pages.dev/blog/</link>
     <description>Posts mostly about web development: HTML, CSS, and JavaScript tips and tricks</description>
-    <atom:link href="https://mori.pages.dev/blog/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mori.pages.dev/blog/test.xml" rel="self" type="application/rss+xml" />
     <language>en</language>
     <image>
       <title>Mori's Blog</title>
