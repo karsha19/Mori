@@ -12,9 +12,13 @@
       font-family: Arial;
       color: silver;
       background: black;
+      margin: 0;
+    }
+
+    body > * {
       max-width: 900px;
       margin: 0 auto;
-      padding: 0 1em;
+      padding: 1em;
     }
 
     nav {
@@ -22,7 +26,6 @@
       flex-wrap: wrap;
       align-items: center;
       font-size: smaller;
-      padding: 1rem 0;
       gap: 0.5rem;
     }
 
@@ -40,13 +43,13 @@
       margin-right: 1rem;
     }
 
-    [href="/blog"] {
-      margin-right: auto;
-    }
-
     img,
     svg {
       display: block;
+    }
+
+    [href="/blog"] {
+      margin-right: auto;
     }
 
     h1,
