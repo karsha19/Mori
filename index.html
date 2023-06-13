@@ -32,10 +32,12 @@
       gap: 0.5rem;
     }
 
-    nav a {
+    nav a,
+    p#blog a {
       font: bold 0.875rem Verdana;
       color: inherit;
       text-decoration: none;
+      transition: 0.3s ease-in-out;
     }
 
     nav a:hover,
@@ -52,7 +54,7 @@
       display: block;
     }
 
-    [href="/blog"] {
+    header [href="/blog"] {
       margin-right: auto;
     }
 
@@ -90,6 +92,26 @@
 
     li {
       margin-top: 1em;
+    }
+
+    time {
+      display: block;
+      font-size: smaller;
+      margin-top: 1rem;
+    }
+
+    p#blog {
+      text-align: right;
+      color: dodgerBlue;
+    }
+
+    p#blog a:hover {
+      color: white;
+    }
+
+    p#blog a::after {
+      content: ">";
+      margin-left: 0.5rem;
     }
   </style>
 </head>
@@ -154,10 +176,24 @@
     <address>Whether you have a comment or suggestion to share, I look forward to hearing from you. Please feel free to contact me on <a href="https://t.me/MortezaMirmojarabian" rel="author">Telegram</a> or by <a href="mailto:morteza.mirmojarabian@gmail.com" rel="author">email</a>.</address>
     <h2>Projects</h2>
     <ul>
-      <li><a href="https://htmleditor.gitlab.io">HTML Editor</a>: Edit your HTML, CSS, and JavaScript code and monitor the instant live preview.</li>
-      <li><a href="https://classactivitycalculator.github.io">Class Activity Calculator</a>: Calculate the class activity grades of the ILI students.</li>
+      <li>
+        <a href="https://htmleditor.gitlab.io">HTML Editor</a>
+        <p>Edit your HTML, CSS, and JavaScript code and monitor the instant live preview.</p>
+      </li>
+      <li>
+        <a href="https://classactivitycalculator.github.io">Class Activity Calculator</a>
+        <p>Calculate the class activity grades of the ILI students.</p>
+      </li>
     </ul>
     <h2>Latest posts</h2>
+    <ul>
+      <li>
+        <a href="/blog/embed-google-drive-folders">How to Embed a Google Drive Folder in a Web Page</a>
+        <time datetime="2023-06-13">June 13, 2023</time>
+        <p>An embed code generator and step-by-step instructions to embedding your Google Drive folder in a website</p>
+      </li>
+    </ul>
+    <p id="blog"><a href="/blog">View all posts</a></p>
   </main>
 
 </body>
