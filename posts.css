@@ -100,6 +100,7 @@ main footer {
 }
 
 code {
+  display: block;
   overflow-wrap: break-word;
 }
 
