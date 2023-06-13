@@ -42,6 +42,7 @@ body > footer a {
   font: bold 0.875rem Verdana;
   color: inherit;
   text-decoration: none;
+  transition: 0.3s ease-in-out;
 }
 
 nav a:hover,
@@ -100,6 +101,10 @@ main footer {
 
 code {
   overflow-wrap: break-word;
+}
+
+main footer svg {
+  transition: 0.3s ease-in-out;
 }
 
 main footer svg:hover {
