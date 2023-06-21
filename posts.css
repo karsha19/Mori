@@ -55,8 +55,9 @@ a#comment {
   margin-right: 1rem;
 }
 
-img,
-svg {
+body > header img,
+body > header svg,
+footer svg {
   display: block;
 }
 
