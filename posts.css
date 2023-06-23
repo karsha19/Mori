@@ -95,8 +95,23 @@ main footer {
 }
 
 code {
-  display: block;
+  font-size: 0.875rem;
   overflow-wrap: break-word;
+  background: whiteSmoke;
+}
+
+code.inlineCode {
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+code:not(.inlineCode) {
+  display: block;
+  white-space: pre-wrap;
+  line-height: 1.5;
+  padding: 1em;
+  border-radius: 5px;
+  margin: 1em 0;
 }
 
 main footer svg {
