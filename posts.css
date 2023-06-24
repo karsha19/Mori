@@ -100,18 +100,18 @@ code {
   background: whiteSmoke;
 }
 
-code.inlineCode {
-  padding: 2px 4px;
-  border-radius: 3px;
-}
-
-code:not(.inlineCode) {
+code.codeBlock {
   display: block;
   white-space: pre-wrap;
   line-height: 1.5;
   padding: 1em;
   border-radius: 5px;
   margin: 1em 0;
+}
+
+code:not(.codeBlock) {
+  padding: 2px 4px;
+  border-radius: 3px;
 }
 
 main footer svg {
