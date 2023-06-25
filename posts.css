@@ -113,8 +113,8 @@ code:not(.codeBlock) {
   border-radius: 3px;
 }
 
-div.result {
-  margin-bottom: 2em;
+main footer {
+  margin-top: 2em;
 }
 
 main footer svg {
