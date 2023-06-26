@@ -113,7 +113,7 @@ code:not(.code-block) {
   border-radius: 3px;
 }
 
-div.result {
+div.centered-result {
   width: fit-content;
   margin: 0 auto 2em;
 }
