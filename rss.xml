@@ -16,7 +16,7 @@
       <link>https://mori.pages.dev/blog/details-hack</link>
       <guid>https://mori.pages.dev/blog/details-hack</guid>
       <pubDate>Wed, 28 Jun 2023 00:00:00 GMT</pubDate>
-      <description>A CSS workaround to create a toggle button with the &#x3C;details&#x3E; HTML element for those who can't use JavaScript</description>
+      <description>A CSS workaround to create a toggle button with the &amp;lt;details&amp;gt; HTML element for those who can't use JavaScript</description>
     </item>
     <item>
       <title>How to Embed a Google Drive Folder in a Web Page</title>
