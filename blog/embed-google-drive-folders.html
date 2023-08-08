@@ -243,11 +243,11 @@
     </div>
   </footer>
   <script>
-    var output = document.querySelector('output'),
+    const output = document.querySelector('output'),
       formButton = document.querySelector('form button');
 
     document.querySelector('form').addEventListener('input', function() {
-      var link = document.getElementById('link');
+      const link = document.getElementById('link');
       if (link.value && link.validity.valid) {
         output.value = `<iframe src="https://drive.google.com/embeddedfolderview?id=${new URL(link.value).pathname.split('/').pop()}#${document.querySelector('select').value}" style="width: ${document.getElementById('width').value}; height: ${document.getElementById('height').value}; border: 0;"></iframe>`;
         formButton.disabled = false;
