@@ -9,6 +9,14 @@
   <link rel="icon" type="image/png" href="/images/m.png">
   <link rel="stylesheet" href="/posts.css">
   <style>
+    summary {
+      cursor: default;
+    }
+
+    details:not(.basic) summary::-webkit-details-marker {
+      display: none;
+    }
+
     details.basic[open] summary {
       color: red;
     }
@@ -243,6 +251,10 @@ details[open] ~ p {
         <code class="code-block">summary::marker {
   content: none;
 }</code>
+        To remove the disclosure triangle in Safari, use the following as well:
+        <code class="code-block">summary::-webkit-details-marker {
+  display: none;
+}</code>
       </li>
     </ul>
     <h2>More examples</h2>
@@ -251,6 +263,11 @@ details[open] ~ p {
     <h4>CSS</h4>
     <code class="code-block">summary {
   display: inline-block;
+  cursor: default;
+}
+
+summary::-webkit-details-marker {
+  display: none;
 }
 
 span {
@@ -286,6 +303,10 @@ details[open] #on {
     <code class="code-block">summary {
   display: inline-flex;
   cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
 }
 
 img {
@@ -326,6 +347,10 @@ details[open] [alt="Light on"] {
   transition: 0.3s ease-in-out;
 }
 
+summary::-webkit-details-marker {
+  display: none;
+}
+
 details[open] summary {
   background-color: dodgerBlue;
   background-position: 16px;
@@ -354,6 +379,11 @@ summary {
   color: #333;
   font: bold 1rem monospace;
   text-shadow: 0 1px white;
+  cursor: default;
+}
+
+summary::-webkit-details-marker {
+  display: none;
 }
 
 details#italic summary,
